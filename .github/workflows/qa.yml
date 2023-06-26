@@ -8,7 +8,7 @@ on:
       - main
 
 jobs:
-  ci:
+  qa:
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
@@ -21,6 +21,8 @@ jobs:
           poetry-version: "1.5.0"
       - name: Install dependencies
         run: poetry install
+        env:
+          POETRY_VIRTUALENVS_CREATE: false
       - name: Check black
         run: black . --check
       - name: Check ruff
