@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "ori-wotw-difficulty-changer"
+version = "0.1.0"
+description = ""
+authors = ["Roland Szabó <roland@rolandszabo.com>"]
+readme = "README.md"
+packages = [{include = "ori_wotw_difficulty_changer"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+typer = {extras = ["all"], version = "^0.9.0"}
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.0"
+black = "^23.3.0"
+ruff = "^0.0.275"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

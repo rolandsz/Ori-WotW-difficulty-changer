@@ -1,0 +1,27 @@
+name: QA
+on:
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+      - main
+
+jobs:
+  ci:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: "3.10"
+      - name: Run image
+        uses: abatilo/actions-poetry@v2
+        with:
+          poetry-version: "1.5.0"
+      - name: Install dependencies
+        run: poetry install
+      - name: Check black
+        run: black . --check
+      - name: Check ruff
+        run: ruff .
