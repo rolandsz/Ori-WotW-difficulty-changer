@@ -16,6 +16,6 @@ def get_possible_difficulty_offsets(
 
     return [
         i
-        for i, (a, b, c) in enumerate(data)
-        if a < b < c and (b - a) == 1 and (c - b) == 1
+        for i, (easy_byte, medium_byte, hard_byte) in enumerate(data)
+        if hard_byte - medium_byte == medium_byte - easy_byte == 1
     ]
