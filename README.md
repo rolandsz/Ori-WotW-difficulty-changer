@@ -17,7 +17,7 @@ Difficulty: Medium
 ```commandline
 > poetry run py main.py set-difficulty --path "C:\Users\<user>\AppData\Local\Ori and the Will of The Wisps\saveFile0.uberstate" --difficulty easy
 Is the current difficulty 'medium'? [y/N]: y
-Is the desired difficulty 'hard'? [y/N]: y
+Is the desired difficulty 'easy'? [y/N]: y
 Creating backup C:\Users\<user>\AppData\Local\Ori and the Will of The Wisps\saveFile0.uberstate.bak.1687803860
 Patching file C:\Users\<user>\AppData\Local\Ori and the Will of The Wisps\saveFile0.uberstate
 Done
