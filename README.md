@@ -1,5 +1,9 @@
 # Ori and the Will of the Wisps difficulty changer
 
+Bosses are too hard, but you don’t want to restart the game from the beginning? Look no further!
+
+![alt text](https://rolandszabo.com/assets/images/posts/ori/ori-wotw-difficulty-changer/result.jpg)
+
 ## Environment setup
 ```commandline
 poetry install
@@ -24,11 +28,11 @@ Done
 ```
 
 ## Save file name mapping
-| Ingame slot (order) | Save file name      |
-|---------------------|---------------------|
-| 1                   | saveFile0.uberstate |
-| 2                   | saveFile1.uberstate |
-| ...                 | ...                 |
+| In-game slot (order) | Save file name      |
+|----------------------|---------------------|
+| 1                    | saveFile0.uberstate |
+| 2                    | saveFile1.uberstate |
+| ...                  | ...                 |
 
 ## Development
 ### Re-calculate offsets
